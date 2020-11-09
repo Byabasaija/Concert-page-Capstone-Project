@@ -3,6 +3,11 @@
     src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
 }
 
+@font-face {
+    font-family: Lato;
+    src: url("../assets/fonts/Lato2OFLWeb/Lato2OFLWeb/Lato/fonts/Lato-Black.eot");
+}
+
 body {
     box-sizing: border-box;
 }
@@ -14,7 +19,7 @@ $secondary-color: #272a31;
 $color: #d3d3d3;
 
 body {
-   
+  width: 100vw; 
 }
          
 .cover {
@@ -22,23 +27,24 @@ body {
     color: $primary-color;
     span {
         color: $secondary-color;
-        font-family: lato;
+        font-family: Lato;
     }
 }
+.color1 {
+    color: $primary-color;
+}
+.color2 {
+    color: $secondary-color;
+}
 
-footer{
-    background-color: $secondary-color;
+.color3 {
     color: $color;
-    padding: 10px;
-    .custom-flexbox {
-    display: flex;
-    flex-direction: row;
-    li {
-        list-style-type: none;
-    }
-}
 }
 
+.main-bg {
+   
+     
+}
 
 /* mobile */
 @media screen and (max-width: 768px) {
@@ -53,6 +59,18 @@ footer{
             padding-right: 10px;
         }
     }
+    footer{
+    background-color: $secondary-color;
+    color: $color;
+    padding: 10px;
+    .custom-flexbox {
+    display: flex;
+    flex-direction: row;
+    li {
+        list-style-type: none;
+    }
+}
+}
 
 }
 
