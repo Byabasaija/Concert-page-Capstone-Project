@@ -1,0 +1,53 @@
+@font-face {
+  font-family: cocogoose;
+  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
+}
+body {
+  box-sizing: border-box;
+}
+
+.cover {
+  font-family: cocogoose;
+  color: #ec5242;
+}
+.cover span {
+  color: #272a31;
+  font-family: lato;
+}
+
+footer {
+  background-color: #272a31;
+  color: #d3d3d3;
+  padding: 10px;
+}
+footer .custom-flexbox {
+  display: flex;
+  flex-direction: row;
+}
+footer .custom-flexbox li {
+  list-style-type: none;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .guest-1 {
+    height: auto;
+  }
+  .guest-1 img {
+    height: 150px;
+    width: 100px;
+    padding-right: 10px;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
