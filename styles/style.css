@@ -12,14 +12,22 @@ body {
 
 body {
   width: 100vw;
+  background-color: whitesmoke;
 }
 
 .cover {
   font-family: cocogoose;
   color: #ec5242;
 }
-.cover span {
-  color: #272a31;
+.cover h1 {
+  background-image: url("../assets/images/live.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.cover h4 {
+  color: #ec5242;
   font-family: Lato;
 }
 
@@ -35,6 +43,28 @@ body {
   color: #d3d3d3;
 }
 
+.description {
+  width: 100%;
+}
+.description p {
+  border: #fff solid 2px;
+  padding: 5px;
+}
+
+.event-date h2 {
+  color: #272a31;
+  font-weight: bold;
+}
+.event-date p {
+  color: #272a31;
+  font-weight: bold;
+}
+
+.main-performers {
+  background-image: url("../assets/images/live2.jpg");
+  background-size: cover;
+}
+
 /* mobile */
 @media screen and (max-width: 768px) {
   .hide-mobile {
@@ -42,12 +72,14 @@ body {
   }
 
   .guest-1 {
-    height: auto;
+    display: flex;
   }
   .guest-1 img {
-    height: 150px;
-    width: 100px;
-    padding-right: 10px;
+    display: inline;
+    height: 80px;
+  }
+  .guest-1 .guest-desc {
+    padding-left: 20px;
   }
 
   footer {
@@ -55,18 +87,35 @@ body {
     color: #d3d3d3;
     padding: 10px;
   }
-  footer .custom-flexbox {
+  footer .footer-flexbox {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
-  footer .custom-flexbox li {
+  footer .footer-flexbox li {
     list-style-type: none;
+  }
+  footer .copyright {
+    text-align: center;
   }
 }
 /* Desktop */
 @media screen and (min-width: 769px) {
   .hide-desktop {
     display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+    color: #d3d3d3;
+    padding: 10px;
+  }
+  footer .footer-flexbox {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer-flexbox li {
+    list-style-type: none;
   }
 }
 

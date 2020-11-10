@@ -19,17 +19,28 @@ $secondary-color: #272a31;
 $color: #d3d3d3;
 
 body {
-  width: 100vw; 
+  width: 100vw;
+  background-color: rgb(245, 245, 245); 
 }
          
 .cover {
     font-family: cocogoose;
     color: $primary-color;
-    span {
-        color: $secondary-color;
+    h1 {
+        background-image: url("../assets/images/live.jpg");
+        background-size: cover;
+         background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        
+        
+    }
+    h4 {
+        color: #ec5242;
         font-family: Lato;
     }
 }
+
 .color1 {
     color: $primary-color;
 }
@@ -41,9 +52,30 @@ body {
     color: $color;
 }
 
-.main-bg {
-   
-     
+.description {
+  
+  width: 100%;
+  p {
+      border: #fff solid 2px;
+      padding: 5px;
+  }
+}
+
+.event-date {
+    h2 {
+     color: $secondary-color;
+    font-weight: bold;
+    }
+    p {
+        color: $secondary-color;
+        font-weight: bold;
+    }
+}
+
+.main-performers {
+    background-image: url("../assets/images/live2.jpg");
+    background-size: cover;
+
 }
 
 /* mobile */
@@ -52,23 +84,31 @@ body {
     display: none;
     }
     .guest-1 {
-        height: auto;
-        img {
-            height: 150px;
-            width: 100px;
-            padding-right: 10px;
-        }
+        display:flex;
+       img {
+           display: inline;
+           height: 80px;
+           
+       }
+       .guest-desc {
+         padding-left: 20px;
+       }
     }
     footer{
     background-color: $secondary-color;
     color: $color;
     padding: 10px;
-    .custom-flexbox {
+
+    .footer-flexbox {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     li {
         list-style-type: none;
     }
+}
+.copyright {
+    text-align: center;
 }
 }
 
@@ -79,4 +119,18 @@ body {
    .hide-desktop {
     display: none;
     }
+
+    footer{
+    background-color: $secondary-color;
+    color: $color;
+    padding: 10px;
+
+    .footer-flexbox {
+    display: flex;
+    flex-direction: row;
+    li {
+        list-style-type: none;
+    }
+}
+}
 }
