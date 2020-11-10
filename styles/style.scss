@@ -21,29 +21,17 @@ $color: #d3d3d3;
 body {
   width: 100vw;
   margin: 0;
+  font-family: Lato, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
  img {
      max-width: 100%;
  }
-
-.cover {
-    font-family: cocogoose;
-    color: $primary-color;
-    h1 {
-        background-image: url("../assets/images/live.jpg");
-        background-size: cover;
-         background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        
-        
-    }
-    h4 {
-        color: #ec5242;
-        font-family: Lato;
-    }
-}
 
 .color1 {
     color: $primary-color;
@@ -67,9 +55,17 @@ body {
 
 
 .main-performers {
-    background-image: url("../assets/images/live2.jpg");
+    background-image:linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
     background-size: cover;
+    h2 {
+        text-decoration: underline $primary-color;
+    }
 
+}
+
+.tickets {
+    border: 10px solid transparent;
+    border-image: url(../assets/images/tickets.png) 30 round;
 }
 
 /* mobile */
@@ -77,6 +73,26 @@ body {
     .hide-mobile {
     display: none;
     }
+
+    .cover {
+        background-image: linear-gradient(rgba(243, 243, 243, 0.952), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
+        width: inherit;
+    font-family: cocogoose;
+    color: $primary-color;
+    h1 {
+        background-image: url("../assets/images/live3.jpg");
+        background-size: cover;
+         background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        
+        
+    }
+    h4 {
+        color: #ec5242;
+        font-family: Lato;
+    }
+}
 
    .event-date {
        background-color: rgb(237, 238, 238); 
@@ -102,9 +118,10 @@ body {
        }
     }
     footer{
-    background-color: $secondary-color;
     color: $color;
-    padding: 10px;
+    padding: 10px;  
+    background-image:linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+    background-size: cover;
 
     .footer-flexbox {
     display: flex;
@@ -127,8 +144,30 @@ body {
     display: none;
     }
 
+    .cover {
+        background-image: linear-gradient(rgba(243, 243, 243, 0.952), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
+        width: inherit;
+        font-family: cocogoose,sans-serif;
+        color: $primary-color;
+    h1 {
+        width: 50%;
+        background-image: url("../assets/images/live3.jpg");
+        background-size: cover;
+         background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        
+        
+    }
+    h4 {
+        color: #ec5242;
+        font-family: Lato;
+    }
+}
+
     footer{
-    background-color: $secondary-color;
+    background-image:linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+    background-size: cover;
     color: $color;
     padding: 10px;
 
