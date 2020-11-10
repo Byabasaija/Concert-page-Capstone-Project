@@ -6,13 +6,18 @@
   font-family: Lato;
   src: url("../assets/fonts/Lato2OFLWeb/Lato2OFLWeb/Lato/fonts/Lato-Black.eot");
 }
-body {
+* {
   box-sizing: border-box;
 }
 
 body {
   width: 100vw;
+  margin: 0;
   background-color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
 }
 
 .cover {
@@ -51,15 +56,6 @@ body {
   padding: 5px;
 }
 
-.event-date h2 {
-  color: #272a31;
-  font-weight: bold;
-}
-.event-date p {
-  color: #272a31;
-  font-weight: bold;
-}
-
 .main-performers {
   background-image: url("../assets/images/live2.jpg");
   background-size: cover;
@@ -69,6 +65,15 @@ body {
 @media screen and (max-width: 768px) {
   .hide-mobile {
     display: none;
+  }
+
+  .event-date h2 {
+    color: #272a31;
+    font-weight: bold;
+  }
+  .event-date p {
+    color: #272a31;
+    font-weight: bold;
   }
 
   .guest-1 {
@@ -116,6 +121,22 @@ body {
   }
   footer .footer-flexbox li {
     list-style-type: none;
+  }
+
+  .event-date h2 {
+    color: #272a31;
+    font-weight: bold;
+    text-align: center;
+  }
+  .event-date p {
+    color: #272a31;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
