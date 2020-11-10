@@ -13,7 +13,6 @@
 body {
   width: 100vw;
   margin: 0;
-  background-color: whitesmoke;
 }
 
 img {
@@ -49,6 +48,7 @@ img {
 }
 
 .description {
+  background-color: #edeeee;
   width: 100%;
 }
 .description p {
@@ -67,6 +67,9 @@ img {
     display: none;
   }
 
+  .event-date {
+    background-color: #edeeee;
+  }
   .event-date h2 {
     color: #272a31;
     font-weight: bold;
@@ -118,11 +121,18 @@ img {
   footer .footer-flexbox {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   footer .footer-flexbox li {
     list-style-type: none;
   }
+  footer .copyright {
+    text-align: center;
+  }
 
+  .event-date {
+    background-color: #edeeee;
+  }
   .event-date h2 {
     color: #272a31;
     font-weight: bold;
@@ -134,9 +144,32 @@ img {
     text-align: center;
   }
 
-  .container-flex {
+  .container-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .guest {
+    background-color: #edeeee;
+  }
+  .guest h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: underline #ec5242;
+  }
+  .guest .guest-flex {
+    display: flex;
+    justify-content: center;
+  }
+  .guest .guest-1 {
+    display: flex;
+  }
+  .guest .guest-1 img {
+    display: inline;
+  }
+  .guest .guest-1 .guest-desc {
+    padding-left: 20px;
   }
 }
 

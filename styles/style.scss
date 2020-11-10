@@ -21,7 +21,6 @@ $color: #d3d3d3;
 body {
   width: 100vw;
   margin: 0;
-  background-color: rgb(245, 245, 245); 
 }
 
  img {
@@ -58,7 +57,7 @@ body {
 }
 
 .description {
-  
+  background-color: rgb(237, 238, 238); 
   width: 100%;
   p {
       border: #fff solid 2px;
@@ -80,6 +79,7 @@ body {
     }
 
    .event-date {
+       background-color: rgb(237, 238, 238); 
      h2 {
      color: $secondary-color;
     font-weight: bold;
@@ -135,13 +135,18 @@ body {
     .footer-flexbox {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     li {
         list-style-type: none;
     }
 }
+.copyright {
+    text-align: center;
+}
 }
 
 .event-date {
+    background-color: rgb(237, 238, 238); 
     h2 {
      color: $secondary-color;
     font-weight: bold;
@@ -154,10 +159,35 @@ body {
     }
 }
 
-.container-flex {
+ .container-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px
 
 }
+  
 
+  .guest {
+      background-color: rgb(237, 238, 238); 
+      h2 {
+          text-align: center;
+          padding-bottom: 20px;
+          text-decoration: underline $primary-color;
+      }
+  .guest-flex {
+    display: flex;
+    justify-content: center;
+ }
+
+  .guest-1 {
+        display:flex;
+       img {
+           display: inline;
+           
+       }
+       .guest-desc {
+         padding-left: 20px;
+       }
+    }
+}
 }
