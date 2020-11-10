@@ -68,6 +68,18 @@ a {
     border-image: url(../assets/images/tickets.png) 30 round;
 }
 
+.about-article {
+    background-color: rgba(196, 196, 196, 0.877);
+    p {
+        background-color: rgb(235, 227, 227);
+}
+
+    h4 {
+        text-decoration: underline $primary-color;
+        
+    }
+}
+
 /* mobile */
 @media screen and (max-width: 768px) {
     .hide-mobile {
@@ -77,8 +89,8 @@ a {
     .cover {
         background-image: linear-gradient(rgba(243, 243, 243, 0.952), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
         width: inherit;
-    font-family: cocogoose;
-    color: $primary-color;
+        font-family: cocogoose;
+        color: $primary-color;
     h1 {
         background-image: url("../assets/images/live3.jpg");
         background-size: cover;

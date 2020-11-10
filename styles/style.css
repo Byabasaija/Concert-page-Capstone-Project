@@ -59,6 +59,16 @@ img {
   border-image: url(../assets/images/tickets.png) 30 round;
 }
 
+.about-article {
+  background-color: rgba(196, 196, 196, 0.877);
+}
+.about-article p {
+  background-color: #ebe3e3;
+}
+.about-article h4 {
+  text-decoration: underline #ec5242;
+}
+
 /* mobile */
 @media screen and (max-width: 768px) {
   .hide-mobile {
