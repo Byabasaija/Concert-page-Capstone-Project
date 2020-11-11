@@ -30,7 +30,7 @@ I've worked on all the requirements given on this project.
 
 [Live Demo Link](https://byabasaija.github.io/Concert-page-Capstone-Project/)
 
-[Presentation Link](https://www.loom.com/share/412af75b7ca641b5b04350db8c24ceeb)
+[Presentation Link](https://www.loom.com/share/387464dffdcb495096d88c350abc8a1b)
 
 ## Authors
 
