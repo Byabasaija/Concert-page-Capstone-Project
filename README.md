@@ -12,11 +12,11 @@ I've worked on all the requirements given on this project.
 - Used Bootstrap.
 
 ## Desktop
-![screenshot](../assets/images/Screenshot4.png)
+![screenshot](./assets/images/Screenshot4.png)
 
 ## Mobile 
 
-![screenshot](../assets/images/Screenshot1.png)
+![screenshot](./assets/images/Screenshot1.png)
 
 ## Built With
 - Vs Code
