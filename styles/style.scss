@@ -3,40 +3,52 @@
   src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
 }
 
+
 * {
   box-sizing: border-box;
 }
 
+
 $primary-color: #ec5242;
+
 
 $secondary-color: #272a31;
 
+
 $color: #d3d3d3;
+
 
 body {
   margin: 0;
   font-family: Lato, sans-serif;
 }
 
+
 a {
   color: #fff;
   text-decoration: none;
 }
 
+
 img {
   max-width: 100%;
 }
 
+
 .color1 {
   color: $primary-color;
 }
+
+
 .color2 {
   color: $secondary-color;
 }
 
+
 .color3 {
   color: $color;
 }
+
 
 .description {
   background-color: rgb(237, 238, 238);
@@ -46,6 +58,7 @@ img {
     padding: 5px;
   }
 }
+
 
 .main-performers {
   background-image: linear-gradient(
@@ -59,10 +72,12 @@ img {
   }
 }
 
+
 .tickets {
   border: 10px solid transparent;
   border-image: url(../assets/images/tickets.png) 30 round;
 }
+
 
 .about-article {
   background-color: rgba(196, 196, 196, 0.877);
@@ -70,16 +85,19 @@ img {
     background-color: rgb(235, 227, 227);
   }
 
+
   h4 {
     text-decoration: underline $primary-color;
   }
 }
+
 
 /* mobile */
 @media screen and (max-width: 768px) {
   .hide-mobile {
     display: none;
   }
+
 
   .cover {
     background-image: linear-gradient(
@@ -88,7 +106,7 @@ img {
       ),
       url(../assets/images/live2.jpg);
     width: inherit;
-    font-family: cocogoose;
+    font-family: cocogoose, sans-serif;
     color: $primary-color;
     h1 {
       background-image: url("../assets/images/live3.jpg");
@@ -99,9 +117,10 @@ img {
     }
     h4 {
       color: #ec5242;
-      font-family: Lato;
+      font-family: Lato, sans-serif;
     }
   }
+
 
   .event-date {
     background-color: rgb(237, 238, 238);
@@ -114,6 +133,8 @@ img {
       font-weight: bold;
     }
   }
+
+
   .guest {
     background-color: rgb(237, 238, 238);
     h2 {
@@ -133,6 +154,7 @@ img {
       }
     }
   }
+
 
   footer {
     color: $color;
@@ -158,11 +180,13 @@ img {
   }
 }
 
+
 /* Desktop */
 @media screen and (min-width: 768px) {
   .hide-desktop {
     display: none;
   }
+
 
   .cover {
     background-image: linear-gradient(
@@ -187,6 +211,7 @@ img {
     }
   }
 
+
   footer {
     background-image: linear-gradient(
         rgba(40, 43, 50, 0.9),
@@ -196,7 +221,6 @@ img {
     background-size: cover;
     color: $color;
     padding: 10px;
-
     .footer-flexbox {
       display: flex;
       flex-direction: row;
@@ -209,6 +233,7 @@ img {
       text-align: center;
     }
   }
+
 
   .event-date {
     background-color: rgb(237, 238, 238);
@@ -224,12 +249,14 @@ img {
     }
   }
 
+
   .container-grid {
     display: grid;
     display: -ms-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
+
 
   .guest {
     background-color: rgb(237, 238, 238);
