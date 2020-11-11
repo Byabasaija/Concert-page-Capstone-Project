@@ -1,15 +1,15 @@
 @font-face {
-    font-family: cocogoose;
-    src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
+  font-family: cocogoose;
+  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
 }
 
 @font-face {
-    font-family: Lato;
-    src: url("../assets/fonts/Lato2OFLWeb/Lato2OFLWeb/Lato/fonts/Lato-Black.eot");
+  font-family: Lato;
+  src: url("../assets/fonts/Lato2OFLWeb/Lato2OFLWeb/Lato/fonts/Lato-Black.eot");
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 $primary-color: #ec5242;
@@ -19,225 +19,243 @@ $secondary-color: #272a31;
 $color: #d3d3d3;
 
 body {
-  width: 100vw;
   margin: 0;
   font-family: Lato, sans-serif;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
- img {
-     max-width: 100%;
- }
+img {
+  max-width: 100%;
+}
 
 .color1 {
-    color: $primary-color;
+  color: $primary-color;
 }
 .color2 {
-    color: $secondary-color;
+  color: $secondary-color;
 }
 
 .color3 {
-    color: $color;
+  color: $color;
 }
 
 .description {
-  background-color: rgb(237, 238, 238); 
+  background-color: rgb(237, 238, 238);
   width: 100%;
   p {
-      border: #fff solid 2px;
-      padding: 5px;
+    border: #fff solid 2px;
+    padding: 5px;
   }
 }
 
-
 .main-performers {
-    background-image:linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
-    background-size: cover;
-    h2 {
-        text-decoration: underline $primary-color;
-    }
-
+  background-image: linear-gradient(
+      rgba(40, 43, 50, 0.9),
+      rgba(40, 43, 50, 0.9)
+    ),
+    url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+  background-size: cover;
+  h2 {
+    text-decoration: underline $primary-color;
+  }
 }
 
 .tickets {
-    border: 10px solid transparent;
-    border-image: url(../assets/images/tickets.png) 30 round;
+  border: 10px solid transparent;
+  border-image: url(../assets/images/tickets.png) 30 round;
 }
 
 .about-article {
-    background-color: rgba(196, 196, 196, 0.877);
-    p {
-        background-color: rgb(235, 227, 227);
-}
+  background-color: rgba(196, 196, 196, 0.877);
+  p {
+    background-color: rgb(235, 227, 227);
+  }
 
-    h4 {
-        text-decoration: underline $primary-color;
-        
-    }
+  h4 {
+    text-decoration: underline $primary-color;
+  }
 }
 
 /* mobile */
 @media screen and (max-width: 768px) {
-    .hide-mobile {
+  .hide-mobile {
     display: none;
-    }
+  }
 
-    .cover {
-        background-image: linear-gradient(rgba(243, 243, 243, 0.952), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
-        width: inherit;
-        font-family: cocogoose;
-        color: $primary-color;
+  .cover {
+    background-image: linear-gradient(
+        rgba(243, 243, 243, 0.952),
+        rgba(196, 196, 196, 0.877)
+      ),
+      url(../assets/images/live2.jpg);
+    width: inherit;
+    font-family: cocogoose;
+    color: $primary-color;
     h1 {
-        background-image: url("../assets/images/live3.jpg");
-        background-size: cover;
-         background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        
-        
+      background-image: url("../assets/images/live3.jpg");
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
     h4 {
-        color: #ec5242;
-        font-family: Lato;
+      color: #ec5242;
+      font-family: Lato;
     }
-}
+  }
 
-   .event-date {
-       background-color: rgb(237, 238, 238); 
-     h2 {
-     color: $secondary-color;
-    font-weight: bold;
+  .event-date {
+    background-color: rgb(237, 238, 238);
+    h2 {
+      color: $secondary-color;
+      font-weight: bold;
     }
-     p {
-        color: $secondary-color;
-        font-weight: bold;
+    p {
+      color: $secondary-color;
+      font-weight: bold;
     }
-}
+  }
+  .guest {
+    background-color: rgb(237, 238, 238);
+    h2 {
+      text-align: center;
+      padding-bottom: 20px;
+      text-decoration: underline $primary-color;
+    }
 
     .guest-1 {
-        display:flex;
-       img {
-           display: inline;
-           height: 80px;
-           
-       }
-       .guest-desc {
-         padding-left: 20px;
-       }
+      display: flex;
+      img {
+        display: inline;
+        height: 80px;
+      }
+      .guest-desc {
+        padding-left: 20px;
+      }
     }
-    footer{
+  }
+
+  footer {
     color: $color;
-    padding: 10px;  
-    background-image:linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+    padding: 10px;
+    background-image: linear-gradient(
+        rgba(40, 43, 50, 0.9),
+        rgba(40, 43, 50, 0.9)
+      ),
+      url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
     background-size: cover;
 
     .footer-flexbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li {
         list-style-type: none;
+      }
     }
-}
-.copyright {
-    text-align: center;
-}
-}
-
+    .copyright {
+      text-align: center;
+    }
+  }
 }
 
 /* Desktop */
-@media screen and (min-width: 769px) {
-   .hide-desktop {
+@media screen and (min-width: 768px) {
+  .hide-desktop {
     display: none;
-    }
+  }
 
-    .cover {
-        background-image: linear-gradient(rgba(243, 243, 243, 0.952), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
-        width: inherit;
-        font-family: cocogoose,sans-serif;
-        color: $primary-color;
+  .cover {
+    background-image: linear-gradient(
+        rgba(243, 243, 243, 0.808),
+        rgba(196, 196, 196, 0.877)
+      ),
+      url(../assets/images/live2.jpg);
+    width: inherit;
+    font-family: cocogoose, sans-serif;
+    color: $primary-color;
     h1 {
-        width: 50%;
-        background-image: url("../assets/images/live3.jpg");
-        background-size: cover;
-         background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        
-        
+      width: 50%;
+      background-image: url("../assets/images/live3.jpg");
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
     h4 {
-        color: #ec5242;
-        font-family: Lato;
+      color: #ec5242;
+      font-family: Lato;
     }
-}
+  }
 
-    footer{
-    background-image:linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+  footer {
+    background-image: linear-gradient(
+        rgba(40, 43, 50, 0.9),
+        rgba(40, 43, 50, 0.9)
+      ),
+      url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
     background-size: cover;
     color: $color;
     padding: 10px;
 
     .footer-flexbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li {
         list-style-type: none;
+      }
     }
-}
-.copyright {
-    text-align: center;
-}
-}
+    .copyright {
+      text-align: center;
+    }
+  }
 
-.event-date {
-    background-color: rgb(237, 238, 238); 
+  .event-date {
+    background-color: rgb(237, 238, 238);
     h2 {
-     color: $secondary-color;
-    font-weight: bold;
-    text-align: center;
+      color: $secondary-color;
+      font-weight: bold;
+      text-align: center;
     }
     p {
-        color: $secondary-color;
-        font-weight: bold;
-        text-align: center;
+      color: $secondary-color;
+      font-weight: bold;
+      text-align: center;
     }
-}
+  }
 
- .container-grid {
+  .container-grid {
     display: grid;
+    display: -ms-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-}
-  
+  }
 
   .guest {
-      background-color: rgb(237, 238, 238); 
-      h2 {
-          text-align: center;
-          padding-bottom: 20px;
-          text-decoration: underline $primary-color;
-      }
-  .guest-flex {
-    display: flex;
-    justify-content: center;
- }
-
-  .guest-1 {
-        display:flex;
-       img {
-           display: inline;
-           
-       }
-       .guest-desc {
-         padding-left: 20px;
-       }
+    background-color: rgb(237, 238, 238);
+    h2 {
+      text-align: center;
+      padding-bottom: 20px;
+      text-decoration: underline $primary-color;
     }
-}
+    .guest-flex {
+      display: flex;
+      justify-content: center;
+    }
+
+    .guest-1 {
+      display: flex;
+      img {
+        display: inline;
+      }
+      .guest-desc {
+        padding-left: 20px;
+      }
+    }
+  }
 }

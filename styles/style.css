@@ -11,7 +11,6 @@
 }
 
 body {
-  width: 100vw;
   margin: 0;
   font-family: Lato, sans-serif;
 }
@@ -84,8 +83,8 @@ img {
   .cover h1 {
     background-image: url("../assets/images/live3.jpg");
     background-size: cover;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
   }
   .cover h4 {
@@ -105,14 +104,22 @@ img {
     font-weight: bold;
   }
 
-  .guest-1 {
+  .guest {
+    background-color: #edeeee;
+  }
+  .guest h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: underline #ec5242;
+  }
+  .guest .guest-1 {
     display: flex;
   }
-  .guest-1 img {
+  .guest .guest-1 img {
     display: inline;
     height: 80px;
   }
-  .guest-1 .guest-desc {
+  .guest .guest-1 .guest-desc {
     padding-left: 20px;
   }
 
@@ -135,13 +142,13 @@ img {
   }
 }
 /* Desktop */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .hide-desktop {
     display: none;
   }
 
   .cover {
-    background-image: linear-gradient(rgba(243, 243, 243, 0.952), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
+    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
     width: inherit;
     font-family: cocogoose, sans-serif;
     color: #ec5242;
@@ -193,6 +200,7 @@ img {
 
   .container-grid {
     display: grid;
+    display: -ms-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
