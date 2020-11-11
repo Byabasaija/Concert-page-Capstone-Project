@@ -53,6 +53,7 @@ img {
 .description {
   background-color: rgb(237, 238, 238);
   width: 100%;
+
   p {
     border: #fff solid 2px;
     padding: 5px;
@@ -61,12 +62,14 @@ img {
 
 
 .main-performers {
-  background-image: linear-gradient(
+  background-image: 
+    linear-gradient(
       rgba(40, 43, 50, 0.9),
       rgba(40, 43, 50, 0.9)
     ),
     url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
   background-size: cover;
+
   h2 {
     text-decoration: underline $primary-color;
   }
@@ -85,7 +88,6 @@ img {
     background-color: rgb(235, 227, 227);
   }
 
-
   h4 {
     text-decoration: underline $primary-color;
   }
@@ -100,7 +102,8 @@ img {
 
 
   .cover {
-    background-image: linear-gradient(
+    background-image: 
+      linear-gradient(
         rgba(243, 243, 243, 0.952),
         rgba(196, 196, 196, 0.877)
       ),
@@ -108,6 +111,7 @@ img {
     width: inherit;
     font-family: cocogoose, sans-serif;
     color: $primary-color;
+
     h1 {
       background-image: url("../assets/images/live3.jpg");
       background-size: cover;
@@ -115,6 +119,7 @@ img {
       background-clip: text;
       color: transparent;
     }
+
     h4 {
       color: #ec5242;
       font-family: Lato, sans-serif;
@@ -124,10 +129,12 @@ img {
 
   .event-date {
     background-color: rgb(237, 238, 238);
+
     h2 {
       color: $secondary-color;
       font-weight: bold;
     }
+
     p {
       color: $secondary-color;
       font-weight: bold;
@@ -137,6 +144,7 @@ img {
 
   .guest {
     background-color: rgb(237, 238, 238);
+    
     h2 {
       text-align: center;
       padding-bottom: 20px;
@@ -145,10 +153,12 @@ img {
 
     .guest-1 {
       display: flex;
+
       img {
         display: inline;
         height: 80px;
       }
+
       .guest-desc {
         padding-left: 20px;
       }
@@ -170,10 +180,12 @@ img {
       display: flex;
       flex-direction: row;
       justify-content: center;
+
       li {
         list-style-type: none;
       }
     }
+
     .copyright {
       text-align: center;
     }
@@ -187,7 +199,6 @@ img {
     display: none;
   }
 
-
   .cover {
     background-image: linear-gradient(
         rgba(243, 243, 243, 0.808),
@@ -195,8 +206,9 @@ img {
       ),
       url(../assets/images/live2.jpg);
     width: inherit;
-    font-family: cocogoose, sans-serif;
+    font-family: cocogoose sans-serif;
     color: $primary-color;
+
     h1 {
       width: 50%;
       background-image: url("../assets/images/live3.jpg");
@@ -205,15 +217,16 @@ img {
       -webkit-background-clip: text;
       color: transparent;
     }
+
     h4 {
       color: #ec5242;
-      font-family: Lato;
+      font-family: Lato sans-serif;
     }
   }
 
-
   footer {
-    background-image: linear-gradient(
+    background-image: 
+       linear-gradient(
         rgba(40, 43, 50, 0.9),
         rgba(40, 43, 50, 0.9)
       ),
@@ -221,19 +234,21 @@ img {
     background-size: cover;
     color: $color;
     padding: 10px;
+
     .footer-flexbox {
       display: flex;
       flex-direction: row;
       justify-content: center;
+
       li {
         list-style-type: none;
       }
+    
     }
     .copyright {
       text-align: center;
     }
   }
-
 
   .event-date {
     background-color: rgb(237, 238, 238);
@@ -249,7 +264,6 @@ img {
     }
   }
 
-
   .container-grid {
     display: grid;
     display: -ms-grid;
@@ -257,14 +271,15 @@ img {
     grid-gap: 20px;
   }
 
-
   .guest {
     background-color: rgb(237, 238, 238);
+
     h2 {
       text-align: center;
       padding-bottom: 20px;
       text-decoration: underline $primary-color;
     }
+
     .guest-flex {
       display: flex;
       justify-content: center;
@@ -272,9 +287,11 @@ img {
 
     .guest-1 {
       display: flex;
+
       img {
         display: inline;
       }
+
       .guest-desc {
         padding-left: 20px;
       }
