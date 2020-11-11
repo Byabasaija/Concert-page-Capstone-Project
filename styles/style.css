@@ -71,7 +71,7 @@ img {
   }
 
   .cover {
-    background-image: linear-gradient(rgba(243, 243, 243, 0.952), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
+    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
     width: inherit;
     font-family: cocogoose, sans-serif;
     color: #ec5242;
@@ -80,7 +80,6 @@ img {
     background-image: url("../assets/images/live3.jpg");
     background-size: cover;
     -webkit-background-clip: text;
-    background-clip: text;
     color: transparent;
   }
   .cover h4 {
@@ -146,20 +145,20 @@ img {
   .cover {
     background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
     width: inherit;
-    font-family: cocogoose sans-serif;
+    font-family: cocogoose, sans-serif;
     color: #ec5242;
   }
   .cover h1 {
     width: 50%;
     background-image: url("../assets/images/live3.jpg");
     background-size: cover;
-    background-clip: text;
+    background-clip: inherit;
     -webkit-background-clip: text;
     color: transparent;
   }
   .cover h4 {
     color: #ec5242;
-    font-family: Lato sans-serif;
+    font-family: Lato, sans-serif;
   }
 
   footer {

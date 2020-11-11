@@ -3,52 +3,41 @@
   src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
 }
 
-
 * {
   box-sizing: border-box;
 }
 
-
 $primary-color: #ec5242;
-
 
 $secondary-color: #272a31;
 
-
 $color: #d3d3d3;
-
 
 body {
   margin: 0;
   font-family: Lato, sans-serif;
 }
 
-
 a {
   color: #fff;
   text-decoration: none;
 }
 
-
 img {
   max-width: 100%;
 }
-
 
 .color1 {
   color: $primary-color;
 }
 
-
 .color2 {
   color: $secondary-color;
 }
 
-
 .color3 {
   color: $color;
 }
-
 
 .description {
   background-color: rgb(237, 238, 238);
@@ -60,14 +49,8 @@ img {
   }
 }
 
-
 .main-performers {
-  background-image: 
-    linear-gradient(
-      rgba(40, 43, 50, 0.9),
-      rgba(40, 43, 50, 0.9)
-    ),
-    url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+  background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
   background-size: cover;
 
   h2 {
@@ -75,15 +58,14 @@ img {
   }
 }
 
-
 .tickets {
   border: 10px solid transparent;
   border-image: url(../assets/images/tickets.png) 30 round;
 }
 
-
 .about-article {
   background-color: rgba(196, 196, 196, 0.877);
+
   p {
     background-color: rgb(235, 227, 227);
   }
@@ -93,21 +75,14 @@ img {
   }
 }
 
-
 /* mobile */
 @media screen and (max-width: 768px) {
   .hide-mobile {
     display: none;
   }
 
-
   .cover {
-    background-image: 
-      linear-gradient(
-        rgba(243, 243, 243, 0.952),
-        rgba(196, 196, 196, 0.877)
-      ),
-      url(../assets/images/live2.jpg);
+    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
     width: inherit;
     font-family: cocogoose, sans-serif;
     color: $primary-color;
@@ -116,7 +91,6 @@ img {
       background-image: url("../assets/images/live3.jpg");
       background-size: cover;
       -webkit-background-clip: text;
-      background-clip: text;
       color: transparent;
     }
 
@@ -125,7 +99,6 @@ img {
       font-family: Lato, sans-serif;
     }
   }
-
 
   .event-date {
     background-color: rgb(237, 238, 238);
@@ -141,10 +114,9 @@ img {
     }
   }
 
-
   .guest {
     background-color: rgb(237, 238, 238);
-    
+
     h2 {
       text-align: center;
       padding-bottom: 20px;
@@ -165,15 +137,10 @@ img {
     }
   }
 
-
   footer {
     color: $color;
     padding: 10px;
-    background-image: linear-gradient(
-        rgba(40, 43, 50, 0.9),
-        rgba(40, 43, 50, 0.9)
-      ),
-      url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+    background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
     background-size: cover;
 
     .footer-flexbox {
@@ -192,7 +159,6 @@ img {
   }
 }
 
-
 /* Desktop */
 @media screen and (min-width: 768px) {
   .hide-desktop {
@@ -200,37 +166,28 @@ img {
   }
 
   .cover {
-    background-image: linear-gradient(
-        rgba(243, 243, 243, 0.808),
-        rgba(196, 196, 196, 0.877)
-      ),
-      url(../assets/images/live2.jpg);
+    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
     width: inherit;
-    font-family: cocogoose sans-serif;
+    font-family: cocogoose, sans-serif;
     color: $primary-color;
 
     h1 {
       width: 50%;
       background-image: url("../assets/images/live3.jpg");
       background-size: cover;
-      background-clip: text;
+      background-clip: inherit;
       -webkit-background-clip: text;
       color: transparent;
     }
 
     h4 {
       color: #ec5242;
-      font-family: Lato sans-serif;
+      font-family: Lato, sans-serif;
     }
   }
 
   footer {
-    background-image: 
-       linear-gradient(
-        rgba(40, 43, 50, 0.9),
-        rgba(40, 43, 50, 0.9)
-      ),
-      url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+    background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
     background-size: cover;
     color: $color;
     padding: 10px;
@@ -243,8 +200,8 @@ img {
       li {
         list-style-type: none;
       }
-    
     }
+
     .copyright {
       text-align: center;
     }
@@ -252,11 +209,13 @@ img {
 
   .event-date {
     background-color: rgb(237, 238, 238);
+
     h2 {
       color: $secondary-color;
       font-weight: bold;
       text-align: center;
     }
+
     p {
       color: $secondary-color;
       font-weight: bold;
