@@ -27,15 +27,25 @@ img {
   max-width: 100%;
 }
 
-.color1 {
+.hr-title {
+  border: 1px solid #ec5242;
+  width: 10%;
+   }
+
+.hr-guest {
+  border: 1px solid #3c3e43;
+  width: 10%;
+}
+
+.red-color {
   color: $primary-color;
 }
 
-.color2 {
+.dark {
   color: $secondary-color;
 }
 
-.color3 {
+.light {
   color: $color;
 }
 
@@ -66,13 +76,41 @@ img {
 .about-article {
   background-color: rgba(196, 196, 196, 0.877);
 
-  p {
-    background-color: rgb(235, 227, 227);
-  }
-
   h4 {
     text-decoration: underline $primary-color;
   }
+}
+
+.guest-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partners-section {
+  background-color: #414246;
+
+  .partners {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+
+    figure {
+      padding: 10px;
+    }
+  }
+}
+
+
+.previous div:nth-child(1) {
+  background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live2.jpg");
+  background-size: cover;
+}
+
+.previous div:nth-child(2) {
+  background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live3.jpg");
+  background-size: cover;
 }
 
 /* mobile */
@@ -87,12 +125,12 @@ img {
     font-family: cocogoose, sans-serif;
     color: $primary-color;
 
-    h1 {
-      background-image: url("../assets/images/live3.jpg");
-      background-size: cover;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
+    // h1 {
+    //   background-image: url("../assets/images/live3.jpg");
+    //   background-size: cover;
+    //   -webkit-background-clip: text;
+    //   color: transparent;
+    // }
 
     h4 {
       color: #ec5242;
@@ -138,11 +176,6 @@ img {
   }
 
   footer {
-    color: $color;
-    padding: 10px;
-    background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
-    background-size: cover;
-
     .footer-flexbox {
       display: flex;
       flex-direction: row;
@@ -171,14 +204,14 @@ img {
     font-family: cocogoose, sans-serif;
     color: $primary-color;
 
-    h1 {
-      width: 50%;
-      background-image: url("../assets/images/live3.jpg");
-      background-size: cover;
-      background-clip: inherit;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
+    // h1 {
+    //   width: 50%;
+    //   background-image: url("../assets/images/live3.jpg");
+    //   background-size: cover;
+    //   background-clip: inherit;
+    //   -webkit-background-clip: text;
+    //   color: transparent;
+    // }
 
     h4 {
       color: #ec5242;
@@ -187,11 +220,6 @@ img {
   }
 
   footer {
-    background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
-    background-size: cover;
-    color: $color;
-    padding: 10px;
-
     .footer-flexbox {
       display: flex;
       flex-direction: row;

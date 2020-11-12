@@ -20,15 +20,25 @@ img {
   max-width: 100%;
 }
 
-.color1 {
+.hr-title {
+  border: 1px solid #ec5242;
+  width: 10%;
+}
+
+.hr-guest {
+  border: 1px solid #3c3e43;
+  width: 10%;
+}
+
+.red-color {
   color: #ec5242;
 }
 
-.color2 {
+.dark {
   color: #272a31;
 }
 
-.color3 {
+.light {
   color: #d3d3d3;
 }
 
@@ -57,11 +67,37 @@ img {
 .about-article {
   background-color: rgba(196, 196, 196, 0.877);
 }
-.about-article p {
-  background-color: #ebe3e3;
-}
 .about-article h4 {
   text-decoration: underline #ec5242;
+}
+
+.guest-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partners-section {
+  background-color: #414246;
+}
+.partners-section .partners {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+.partners-section .partners figure {
+  padding: 10px;
+}
+
+.previous div:nth-child(1) {
+  background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live2.jpg");
+  background-size: cover;
+}
+
+.previous div:nth-child(2) {
+  background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live3.jpg");
+  background-size: cover;
 }
 
 /* mobile */
@@ -75,12 +111,6 @@ img {
     width: inherit;
     font-family: cocogoose, sans-serif;
     color: #ec5242;
-  }
-  .cover h1 {
-    background-image: url("../assets/images/live3.jpg");
-    background-size: cover;
-    -webkit-background-clip: text;
-    color: transparent;
   }
   .cover h4 {
     color: #ec5242;
@@ -118,12 +148,6 @@ img {
     padding-left: 20px;
   }
 
-  footer {
-    color: #d3d3d3;
-    padding: 10px;
-    background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
-    background-size: cover;
-  }
   footer .footer-flexbox {
     display: flex;
     flex-direction: row;
@@ -148,25 +172,11 @@ img {
     font-family: cocogoose, sans-serif;
     color: #ec5242;
   }
-  .cover h1 {
-    width: 50%;
-    background-image: url("../assets/images/live3.jpg");
-    background-size: cover;
-    background-clip: inherit;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
   .cover h4 {
     color: #ec5242;
     font-family: Lato, sans-serif;
   }
 
-  footer {
-    background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
-    background-size: cover;
-    color: #d3d3d3;
-    padding: 10px;
-  }
   footer .footer-flexbox {
     display: flex;
     flex-direction: row;
