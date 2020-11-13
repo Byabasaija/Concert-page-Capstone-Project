@@ -30,6 +30,10 @@ img {
   width: 10%;
 }
 
+.section-title {
+  font-size: 1.5rem;
+}
+
 .red-color {
   color: #ec5242;
 }
@@ -42,21 +46,27 @@ img {
   color: #d3d3d3;
 }
 
+.promote {
+  border: 5px solid #ec5242;
+}
+
 .description {
-  background-color: #edeeee;
   width: 100%;
+}
+.description h1 {
+  font-weight: 700;
 }
 .description p {
   border: #fff solid 2px;
-  padding: 5px;
+  padding: 20px;
+  color: #272a31;
+  font-family: Lato, sans-serif;
+  background-color: #edeeee;
 }
 
 .main-performers {
   background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
   background-size: cover;
-}
-.main-performers h2 {
-  text-decoration: underline #ec5242;
 }
 
 .tickets {
@@ -87,15 +97,17 @@ img {
   justify-content: center;
 }
 .partners-section .partners figure {
-  padding: 10px;
+  padding: 10px 20px;
+}
+.partners-section .partners figure img {
+  width: 170px;
 }
 
-.previous div:nth-child(1) {
+.previous .previous-1 {
   background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live2.jpg");
   background-size: cover;
 }
-
-.previous div:nth-child(2) {
+.previous .previous-2 {
   background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live3.jpg");
   background-size: cover;
 }
@@ -128,37 +140,6 @@ img {
     color: #272a31;
     font-weight: bold;
   }
-
-  .guest {
-    background-color: #edeeee;
-  }
-  .guest h2 {
-    text-align: center;
-    padding-bottom: 20px;
-    text-decoration: underline #ec5242;
-  }
-  .guest .guest-1 {
-    display: flex;
-  }
-  .guest .guest-1 img {
-    display: inline;
-    height: 80px;
-  }
-  .guest .guest-1 .guest-desc {
-    padding-left: 20px;
-  }
-
-  footer .footer-flexbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  footer .footer-flexbox li {
-    list-style-type: none;
-  }
-  footer .copyright {
-    text-align: center;
-  }
 }
 /* Desktop */
 @media screen and (min-width: 768px) {
@@ -177,18 +158,6 @@ img {
     font-family: Lato, sans-serif;
   }
 
-  footer .footer-flexbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  footer .footer-flexbox li {
-    list-style-type: none;
-  }
-  footer .copyright {
-    text-align: center;
-  }
-
   .event-date {
     background-color: #edeeee;
   }
@@ -203,33 +172,17 @@ img {
     text-align: center;
   }
 
-  .container-grid {
-    display: grid;
-    display: -ms-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-  }
-
-  .guest {
-    background-color: #edeeee;
-  }
-  .guest h2 {
-    text-align: center;
-    padding-bottom: 20px;
-    text-decoration: underline #ec5242;
-  }
-  .guest .guest-flex {
+  .perfomance-items {
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
-  .guest .guest-1 {
-    display: flex;
+  .perfomance-items > div {
+    padding-right: 10px;
+    flex: 1 1;
   }
-  .guest .guest-1 img {
-    display: inline;
-  }
-  .guest .guest-1 .guest-desc {
-    padding-left: 20px;
+  .perfomance-items > div img {
+    width: 100%;
   }
 }
 

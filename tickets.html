@@ -18,34 +18,89 @@
     </head>
     <body>
        <header>
-            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
-                <a class="navbar-brand hide-mobile" href="index.html"><img src="assets/images/908px-WCB_Wasafi.jpg" alt="brand" height="50"></a>
-                <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars  hide-desktop"></i>
-                </button>
+      <div class="d-none d-md-block d-lg-block">
+        <nav class="navbar navbar-expand-sm bg-dark text-white pt-0 pb-0">
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav my-2 my-lg-0">
-                        <li class="nav-item mr-sm-2"><a href="about.html" class="nav-link">About</a></li>
-                        <li class="nav-item my-2 my-sm-0" ><a href="tickets.html" class="nav-link">Ticket</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                English
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                My Page
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Logout
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light
+        bg-light">
+        <a class="navbar-brand hide-mobile" href="index.html"><img
+            src="assets/images/908px-WCB_Wasafi.jpg" alt="brand" height="50"></a>
+        <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars hide-desktop"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Live Concert<span
+                  class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item mr-sm-2"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item my-2 my-sm-0"><a href="tickets.html"
+                class="nav-link">Ticket</a></li>
+            <li class="nav-item pr-2 pl-2">
+              <a class="nav-link" href="#">
+                Join
+              </a>
+            </li>
+            <li class="nav-item pr-2 pl-2">
+              <a class="nav-link" href="#">
+                Sponsor
+              </a>
+            </li>
+            <li class="nav-item pr-2 pl-2">
+              <a class="nav-link" href="#">
+                News
+              </a>
+            </li>
+            <li class="nav-item pr-2 pl-2 promote">
+              <a class="text-danger nav-link" href="#">
+                Promote
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
         
         <main class="p-5">
              <div class="row pt-3 mb-5">
           <div class="col-12">
-            <h1 class="text-center section-title tickets-title text-muted">Select Tickets</h1>
+            <h1 class="text-center section-heading tickets-title text-muted">Select Tickets</h1>
           </div>
           <hr class="hr-title">
         </div>
@@ -100,14 +155,13 @@
           <section class="container-fluid featured-speakers text-dark bg-white">
         <div class="row pt-3 mb-5">
           <div class="col-12">
-            <h3 class="text-center section-title">Select Your Room</h3>
+            <h3 class="text-center section-heading">Select Your Room</h3>
             <hr class="hr-title">
           </div>
         </div>
         <div class="row">
           <div class="col-12 steps">
-            <p class="border rounded text-center font-weight-bold p-2">
-              <span class="text-uppercase red"><i class="fas fa-circle"></i>STEP 2</span>
+            <p class="border rounded text-center font-weight-bold p-2 text-danger">
               Please select your room. There will be no further
               coasts for accomodation.
             </p>
@@ -125,7 +179,7 @@
               </p>
               <p class="d-flex m-3">
                 <span class="font-weight-bold mr-2">
-                  Room 
+                  Room 2
                 </span>
                 <input type="radio" name="ticket" value="ticket">
               </p>
@@ -168,7 +222,7 @@
               </p>
               <p class="d-flex m-3">
                 <span class="font-weight-bold mr-2">
-                  Room 
+                  Room 2
                 </span>
                 <input type="radio" name="ticket" value="ticket">
               </p>
@@ -199,7 +253,6 @@
             </div>
             </div>
             </div>
-          </div>
           <div class="mt-4 mb-5 text-center">
              <button type="button" class="btn btn-danger">Select your Room</button>
           </div>

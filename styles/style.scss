@@ -30,11 +30,15 @@ img {
 .hr-title {
   border: 1px solid #ec5242;
   width: 10%;
-   }
+}
 
 .hr-guest {
   border: 1px solid #3c3e43;
   width: 10%;
+}
+
+.section-title {
+  font-size: 1.5rem;
 }
 
 .red-color {
@@ -49,23 +53,29 @@ img {
   color: $color;
 }
 
+.promote {
+  border: 5px solid #ec5242;
+}
+
 .description {
-  background-color: rgb(237, 238, 238);
   width: 100%;
+
+  h1 {
+    font-weight: 700;
+  }
 
   p {
     border: #fff solid 2px;
-    padding: 5px;
+    padding: 20px;
+    color: $secondary-color;
+    font-family: Lato, sans-serif;
+    background-color: rgb(237, 238, 238);
   }
 }
 
 .main-performers {
   background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
   background-size: cover;
-
-  h2 {
-    text-decoration: underline $primary-color;
-  }
 }
 
 .tickets {
@@ -97,20 +107,25 @@ img {
     justify-content: center;
 
     figure {
-      padding: 10px;
+      padding: 10px 20px;
+
+      img {
+        width: 170px;
+      }
     }
   }
 }
 
+.previous {
+  .previous-1 {
+    background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live2.jpg");
+    background-size: cover;
+  }
 
-.previous div:nth-child(1) {
-  background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live2.jpg");
-  background-size: cover;
-}
-
-.previous div:nth-child(2) {
-  background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live3.jpg");
-  background-size: cover;
+  .previous-2 {
+    background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live3.jpg");
+    background-size: cover;
+  }
 }
 
 /* mobile */
@@ -124,13 +139,6 @@ img {
     width: inherit;
     font-family: cocogoose, sans-serif;
     color: $primary-color;
-
-    // h1 {
-    //   background-image: url("../assets/images/live3.jpg");
-    //   background-size: cover;
-    //   -webkit-background-clip: text;
-    //   color: transparent;
-    // }
 
     h4 {
       color: #ec5242;
@@ -149,45 +157,6 @@ img {
     p {
       color: $secondary-color;
       font-weight: bold;
-    }
-  }
-
-  .guest {
-    background-color: rgb(237, 238, 238);
-
-    h2 {
-      text-align: center;
-      padding-bottom: 20px;
-      text-decoration: underline $primary-color;
-    }
-
-    .guest-1 {
-      display: flex;
-
-      img {
-        display: inline;
-        height: 80px;
-      }
-
-      .guest-desc {
-        padding-left: 20px;
-      }
-    }
-  }
-
-  footer {
-    .footer-flexbox {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-
-      li {
-        list-style-type: none;
-      }
-    }
-
-    .copyright {
-      text-align: center;
     }
   }
 }
@@ -204,34 +173,9 @@ img {
     font-family: cocogoose, sans-serif;
     color: $primary-color;
 
-    // h1 {
-    //   width: 50%;
-    //   background-image: url("../assets/images/live3.jpg");
-    //   background-size: cover;
-    //   background-clip: inherit;
-    //   -webkit-background-clip: text;
-    //   color: transparent;
-    // }
-
     h4 {
       color: #ec5242;
       font-family: Lato, sans-serif;
-    }
-  }
-
-  footer {
-    .footer-flexbox {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-
-      li {
-        list-style-type: none;
-      }
-    }
-
-    .copyright {
-      text-align: center;
     }
   }
 
@@ -251,36 +195,17 @@ img {
     }
   }
 
-  .container-grid {
-    display: grid;
-    display: -ms-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-  }
+  .perfomance-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-  .guest {
-    background-color: rgb(237, 238, 238);
-
-    h2 {
-      text-align: center;
-      padding-bottom: 20px;
-      text-decoration: underline $primary-color;
-    }
-
-    .guest-flex {
-      display: flex;
-      justify-content: center;
-    }
-
-    .guest-1 {
-      display: flex;
+    & > div {
+      padding-right: 10px;
+      flex: 1 1;
 
       img {
-        display: inline;
-      }
-
-      .guest-desc {
-        padding-left: 20px;
+        width: 100%;
       }
     }
   }
