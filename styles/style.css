@@ -2,6 +2,10 @@
   font-family: cocogoose;
   src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
 }
+html {
+  font-size: medium;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -118,9 +122,15 @@ img {
     display: none;
   }
 
+  html {
+    font-size: x-small;
+  }
+
   .cover {
-    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
-    width: inherit;
+    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     font-family: cocogoose, sans-serif;
     color: #ec5242;
   }
@@ -148,8 +158,10 @@ img {
   }
 
   .cover {
-    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live2.jpg);
-    width: inherit;
+    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     font-family: cocogoose, sans-serif;
     color: #ec5242;
   }
