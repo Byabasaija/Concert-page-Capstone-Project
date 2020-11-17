@@ -1,0 +1,224 @@
+@font-face {
+  font-family: cocogoose;
+  src: url("../assets/fonts/cocogoose/Cocogoose_trial.otf");
+}
+
+html {
+  font-size: medium;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$primary-color: #ec5242;
+
+$secondary-color: #272a31;
+
+$color: #d3d3d3;
+
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hr-title {
+  border: 1px solid #ec5242;
+  width: 10%;
+}
+
+.hr-guest {
+  border: 1px solid #3c3e43;
+  width: 10%;
+}
+
+.section-title {
+  font-size: 1.5rem;
+}
+
+.red-color {
+  color: $primary-color;
+}
+
+.dark {
+  color: $secondary-color;
+}
+
+.light {
+  color: $color;
+}
+
+.promote {
+  border: 5px solid #ec5242;
+}
+
+.description {
+  width: 100%;
+
+  h1 {
+    font-weight: 700;
+  }
+
+  p {
+    border: #fff solid 2px;
+    padding: 20px;
+    color: $secondary-color;
+    font-family: Lato, sans-serif;
+    background-color: rgb(237, 238, 238);
+  }
+}
+
+.main-performers {
+  background-image: linear-gradient(rgba(40, 43, 50, 0.9), rgba(40, 43, 50, 0.9)), url("https://images.assetsdelivery.com/compings_v2/floralset/floralset1905/floralset190500161.jpg");
+  background-size: cover;
+}
+
+.tickets {
+  border: 10px solid transparent;
+  border-image: url(../assets/images/tickets.png) 30 round;
+}
+
+.about-article {
+  background-color: rgba(196, 196, 196, 0.877);
+
+  h4 {
+    text-decoration: underline $primary-color;
+  }
+}
+
+.guest-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partners-section {
+  background-color: #414246;
+
+  .partners {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+
+    figure {
+      padding: 10px 20px;
+
+      img {
+        width: 170px;
+      }
+    }
+  }
+}
+
+.previous {
+  .previous-1 {
+    background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live2.jpg");
+    background-size: cover;
+  }
+
+  .previous-2 {
+    background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url("../assets/images/live3.jpg");
+    background-size: cover;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  html {
+    font-size: x-small;
+  }
+
+  .cover {
+    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: cocogoose, sans-serif;
+    color: $primary-color;
+
+    h4 {
+      color: #ec5242;
+      font-family: Lato, sans-serif;
+    }
+  }
+
+  .event-date {
+    background-color: rgb(237, 238, 238);
+
+    h2 {
+      color: $secondary-color;
+      font-weight: bold;
+    }
+
+    p {
+      color: $secondary-color;
+      font-weight: bold;
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .hide-desktop {
+    display: none;
+  }
+
+  .cover {
+    background-image: linear-gradient(rgba(243, 243, 243, 0.808), rgba(196, 196, 196, 0.877)), url(../assets/images/live.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: cocogoose, sans-serif;
+    color: $primary-color;
+
+    h4 {
+      color: #ec5242;
+      font-family: Lato, sans-serif;
+    }
+  }
+
+  .event-date {
+    background-color: rgb(237, 238, 238);
+
+    h2 {
+      color: $secondary-color;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      color: $secondary-color;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .perfomance-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & > div {
+      padding-right: 10px;
+      flex: 1 1;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

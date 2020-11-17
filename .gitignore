@@ -1,0 +1,13 @@
+node_modules
+assets\fonts\Lato2OFLWeb\__MACOSX
+assets\fonts\Lato2OFLWeb\Lato2OFLWeb\OFL.txt
+assets\fonts\Lato2OFLWeb\Lato2OFLWeb\README-WEB.txt
+{
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.useBrowserPreview": true,
+    "css.lint.argumentsInColorFunction": "ignore",
+    "css.lint.hexColorLength": "ignore",
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false
+}
