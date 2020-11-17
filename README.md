@@ -11,12 +11,6 @@ I've worked on all the requirements given on this project.
 - Styled the elements to look like the given design.
 - Used Bootstrap.
 
-## Desktop
-![screenshot](./assets/images/Screenshot4.png)
-
-## Mobile 
-
-![screenshot](./assets/images/Screenshot1.png)
 
 ## Built With
 - Vs Code
