@@ -1,7 +1,7 @@
 
 # HTML-CSS-capstone-project-Concert-Page
 
-This project is the capstone project of in the HTML/CSS module at Microverse. The Main goal was to build an online website for an event. I chose an HTML/CSS bootcamp.
+This project is the capstone project of in the HTML/CSS module at Microverse. The Main goal was to build an online website for an event. I chose a music Concert.
 
 I've worked on all the requirements given on this project.
 
